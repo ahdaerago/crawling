@@ -191,7 +191,7 @@ public  class NaverMovie{
 				
 				ReviewDTO rDto = new ReviewDTO(mv_code, rcode, score, content, writer, regdate);
 				NaverDAO nDao = new NaverDAO();
-				nDao.insertReview(rDto); // mongodb에 저장
+				//nDao.insertReview(rDto); // mongodb에 저장
 				NaverDBDAO dbDao = new NaverDBDAO();
 				dbDao.insertReview(rDto);				
 
@@ -274,7 +274,7 @@ public  class NaverMovie{
 			
 			PeopleDTO pDto = new PeopleDTO(mv_code, dept, pcode, profile, pname, eng_name, part, role);
 			NaverDAO nDao = new NaverDAO();
-			nDao.insertPeople(pDto);
+			//nDao.insertPeople(pDto);
 
 		}
 				
