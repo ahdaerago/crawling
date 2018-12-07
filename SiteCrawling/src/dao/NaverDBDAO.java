@@ -1,5 +1,9 @@
 package dao;
 
-public class NaverDBDAO {
+import dto.ReviewDTO;
 
+public class NaverDBDAO {
+	public void insertReview(ReviewDTO rDto) {
+		
+	}
 }
