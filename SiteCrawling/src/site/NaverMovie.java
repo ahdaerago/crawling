@@ -108,7 +108,7 @@ public  class NaverMovie{
 					//영화 상세정보 저장
 					DetailDTO ddto = new DetailDTO(mv_code,kor_tit,eng_tit,poster,info_spec,genre,nation,openDt,director,lead_role);
 					NaverDAO nDao = new NaverDAO();
-					nDao.insertDetail(ddto);
+					//nDao.insertDetail(ddto);
 					//출연 인물 및 감독 정보 크롤링
 					madePeople(mv_code);
 					reviewCrawling(mv_code); //리뷰 댓글 크롤링
