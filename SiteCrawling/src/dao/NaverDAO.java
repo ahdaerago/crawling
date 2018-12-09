@@ -39,6 +39,17 @@ public class NaverDAO {
 	}
 	//리뷰 정보 저장
 	public void insertReview(ReviewDTO rDto) {
-		
+		MongoClient mClient = new MongoClient("localhost",27017);
+		MongoDatabase trendDB = mClient.getDatabase("test");
+		MongoCollection<Document> collection = trendDB.getCollection("Naverreview2");
+		Document doc = new Document("movieCd",rDto.getMovieCd())
+				.append("rcode", rDto.getRcode())
+				.append("score", rDto.getScore())
+				.append("content", rDto.getContent())
+				.append("writer", rDto.getWriter())
+				.append("regdate", rDto.getRegdate());
+		collection.insertOne(doc);
+		System.out.println("일일"+rDto.toString());
+		mClient.close(); //연결해제 자원 반납
 	}
 }

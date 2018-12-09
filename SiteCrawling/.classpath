@@ -2,8 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/developer/java_libray/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="D:/developer/java_libray/jsoup-1.11.3.jar"/>
-	<classpathentry kind="lib" path="D:/developer/NoSQL/mongo-java-driver-3.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Desktop/jsoup-1.11.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Desktop/mongo-java-driver-3.8.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
